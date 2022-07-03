@@ -5,3 +5,7 @@ mongodb:
 redis:
     source:  "https://github.com/Varalakshmi13/tf-module-redis.git"
     version: "main"
+
+redis:
+    source:  "https://github.com/Varalakshmi13/tf-module-mysql.git"
+    version: "main"
