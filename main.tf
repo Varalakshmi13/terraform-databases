@@ -1,7 +1,7 @@
 module "mongodb" {
   source = "./vendor/modules/mongodb"
   ENV = var.ENV
-  WORKSTATION_IP = var.WORKSTATION_IP
+//  WORKSTATION_IP = var.WORKSTATION_IP
 }
 
 module "redis" {
