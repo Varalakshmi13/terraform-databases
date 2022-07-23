@@ -19,3 +19,7 @@ module "rabbitmq" {
   source = "./vendor/modules/rabbitmq"
   ENV = var.ENV
 }
+
+output "redis" {
+  value = module.redis.redis
+}
