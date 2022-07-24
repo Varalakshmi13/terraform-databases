@@ -36,6 +36,3 @@ module "rabbitmq" {
 
 }
 
-output "data" {
-  value = module.mongodb.data
-}
