@@ -11,6 +11,10 @@ module "mongodb" {
 module "redis" {
   source = "./vendor/modules/redis"
   ENV = var.ENV
+  ELASTICACHE_PORT = var.ELASTICACHE_PORT
+  ELASTICACHE_NODE_TYPE = var.ELASTICACHE_NODE_TYPE
+  ELASTICACHE_NODE_COUNT = var.ELASTICACHE_NODE_COUNT
+  ELASTICACHE_ENGINE_VERSION = var.ELASTICACHE_ENGINE_VERSION
 }
 
 module "mysql" {
@@ -26,4 +30,8 @@ module "mysql" {
 module "rabbitmq" {
   source = "./vendor/modules/rabbitmq"
   ENV = var.ENV
+  RABBITMQ_PORT = var.RABBITMQ_PORT
+  RABBITMQ_ENGINE_VERSION = var.RABBITMQ_ENGINE_VERSION
+  RABBITMQ_INSTANCE_TYPE = var.RABBITMQ_INSTANCE_TYPE
+
 }
